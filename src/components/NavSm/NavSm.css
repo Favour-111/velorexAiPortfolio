@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -87,7 +87,7 @@
     background-color: transparent;
     border: 1px solid #ffffff4e;
     color: white;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 400;
     padding: 10px;
     border-radius: 20px;

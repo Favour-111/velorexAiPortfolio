@@ -5,3 +5,80 @@
   background-size: cover;
   height: 100vh;
 }
+.banner-text-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.Written-Text {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 8px;
+  margin-top: 20px;
+}
+.banner-text-1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+.blinking-cursor {
+  font-weight: light;
+  animation: blink 1s infinite;
+}
+.company-name {
+  margin-top: 20px;
+  color: #7e7e7e;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .Written-Text {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .banner-text-1 {
+    font-size: 18px;
+  }
+  .Written-Text {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .banner-text-1 {
+    font-size: 15px;
+  }
+  .Written-Text {
+    font-size: 25px;
+  }
+  .company-name {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .banner-text-1 {
+    font-size: 12px;
+  }
+  .Written-Text {
+    font-size: 18px;
+  }
+  .company-name {
+    font-size: 11px;
+  }
+}
