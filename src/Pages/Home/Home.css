@@ -63,6 +63,10 @@
   color: #787878;
   font-size: 16px;
 }
+.short-content-icon {
+  color: #000;
+  font-size: 45px;
+}
 @keyframes blink {
   0%,
   50% {
@@ -106,10 +110,13 @@
 }
 @media screen and (max-width: 580px) {
   .Banner {
-    height: 90vh;
+    height: 80vh;
+  }
+  .short-content-icon {
+    font-size: 30px;
   }
   .banner-text-container {
-    height: 90vh;
+    height: 80vh;
   }
   .banner-text-1 {
     font-size: 12px;

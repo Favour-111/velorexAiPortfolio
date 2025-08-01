@@ -63,7 +63,7 @@ const Home = () => {
         <div className="short-content-container">
           <div className="short-content-item">
             <div>
-              <GoLightBulb color="#000" size={50} />
+              <GoLightBulb className="short-content-icon" />
             </div>
             <div className="short-content-head">INNOVATORS</div>
             <div className="short-content-content">
@@ -73,7 +73,7 @@ const Home = () => {
           </div>
           <div className="short-content-item">
             <div>
-              <GoGraph color="#000" size={50} />
+              <GoGraph className="short-content-icon" />
             </div>
             <div className="short-content-head">STRATEGISTS</div>
             <div className="short-content-content">
@@ -83,7 +83,7 @@ const Home = () => {
           </div>
           <div className="short-content-item">
             <div>
-              <IoConstructOutline color="#000" size={50} />
+              <IoConstructOutline className="short-content-icon" />
             </div>
             <div className="short-content-head">BUILDERS</div>
             <div className="short-content-content">
