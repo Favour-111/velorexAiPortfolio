@@ -9,7 +9,7 @@
 }
 
 .navbar-sm.scrolled {
-  background-color: black;
+  background-color: black !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,8 +40,8 @@
   transition: 350ms;
   ul {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start !important;
+    flex-direction: column !important;
+    align-items: flex-start;
     width: 100%;
     margin: 0 !important;
     padding: 0 !important;
@@ -63,6 +63,7 @@
         text-decoration: none;
         color: rgb(172, 172, 172);
         transition: 350ms;
+        margin-top: 10px;
       }
       .Nav-Links:hover {
         color: white !important;

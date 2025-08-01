@@ -38,6 +38,7 @@
   justify-content: center;
   ul {
     display: flex;
+    flex-direction: row !important;
     align-items: center;
     gap: 30px;
     li {
