@@ -32,7 +32,7 @@ const Nav = () => {
             <div>Velorex</div>
           </div>
           <div className="Nav-items">
-            <ul>
+            <ul className="nav-list">
               <li>
                 <Link className="Nav-Links">Home</Link>
               </li>

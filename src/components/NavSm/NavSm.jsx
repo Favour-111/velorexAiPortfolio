@@ -53,7 +53,7 @@ const NavSm = () => {
         </div>
 
         <div className={`Nav-items-sm ${navIsOpened ? "opened" : ""}`}>
-          <ul>
+          <ul className="nav-list-sm">
             <li>
               <Link className="Nav-Links">Home</Link>
             </li>
