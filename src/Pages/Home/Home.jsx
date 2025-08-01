@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav/Nav";
 import "./Home.css";
 import NavSm from "../../components/NavSm/NavSm";
+import { GoGraph, GoLightBulb } from "react-icons/go";
+import { IoConstructOutline } from "react-icons/io5";
 const Home = () => {
   const baseText = "In ";
   const words = [
@@ -57,6 +59,38 @@ const Home = () => {
             <span className="blinking-cursor">|</span>
           </div>
           <div className="company-name">Velorex AI</div>
+        </div>
+        <div className="short-content-container">
+          <div className="short-content-item">
+            <div>
+              <GoLightBulb color="#000" size={50} />
+            </div>
+            <div className="short-content-head">INNOVATORS</div>
+            <div className="short-content-content">
+              Shaping the future with bold ideas. We blend technology and
+              creativity to build lasting impact.
+            </div>
+          </div>
+          <div className="short-content-item">
+            <div>
+              <GoGraph color="#000" size={50} />
+            </div>
+            <div className="short-content-head">STRATEGISTS</div>
+            <div className="short-content-content">
+              Turning insights into action. We design smart, data-driven
+              solutions that drive real results.
+            </div>
+          </div>
+          <div className="short-content-item">
+            <div>
+              <IoConstructOutline color="#000" size={50} />
+            </div>
+            <div className="short-content-head">BUILDERS</div>
+            <div className="short-content-content">
+              From concept to completion. We bring your vision to life with
+              precision and passion.
+            </div>
+          </div>
         </div>
       </div>
     </div>
