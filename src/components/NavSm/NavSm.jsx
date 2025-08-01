@@ -54,16 +54,16 @@ const NavSm = () => {
 
         <div className={`Nav-items-sm ${navIsOpened ? "opened" : ""}`}>
           <ul className="nav-list-sm">
-            <li>
+            <li className="d-flex align-items-center bg-dark">
               <Link className="Nav-Links">Home</Link>
             </li>
-            <li>
+            <li className="d-flex align-items-center">
               <Link className="Nav-Links">About</Link>
             </li>
-            <li>
+            <li className="d-flex align-items-center">
               <Link className="Nav-Links">Contact</Link>
             </li>
-            <li>
+            <li className="d-flex align-items-center">
               <Link className="Nav-Links">Gallery</Link>
             </li>
           </ul>
