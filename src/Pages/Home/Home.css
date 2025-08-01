@@ -110,10 +110,10 @@
 }
 @media screen and (max-width: 580px) {
   .Banner {
-    height: 80vh;
+    height: 90vh;
   }
   .short-content-icon {
-    font-size: 30px;
+    font-size: 90px;
   }
   .banner-text-container {
     height: 80vh;
