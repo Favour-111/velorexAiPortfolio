@@ -195,9 +195,11 @@
   .who-section {
     padding: 60px 20px;
     margin-top: 30px;
+    justify-content: flex-start;
   }
   .who-right {
     padding: 10px;
+    max-width: 100% !important;
   }
   .who-button {
     padding: 10px 20px;

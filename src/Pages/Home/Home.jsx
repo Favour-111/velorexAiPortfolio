@@ -6,6 +6,9 @@ import { GoGraph, GoLightBulb } from "react-icons/go";
 import { IoConstructOutline } from "react-icons/io5";
 import FeaturesSection from "../../components/FeatureSection/FeatureSection";
 import Service from "../../components/Services/Service";
+import WebsiteExpert from "../../components/WebsiteExpert/WebsiteExpert";
+import Testimonial from "../../components/Testimonial/Testimonial";
+import Blog from "../../components/Blog/Blog";
 const Home = () => {
   const baseText = "In ";
   const words = [
@@ -157,6 +160,15 @@ const Home = () => {
       </div>
       <div>
         <Service />
+      </div>
+      <div>
+        <WebsiteExpert />
+      </div>
+      <div>
+        <Testimonial />
+      </div>
+      <div>
+        <Blog />
       </div>
     </div>
   );

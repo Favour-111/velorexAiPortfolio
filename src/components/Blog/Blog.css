@@ -1,0 +1,50 @@
+.blog-container {
+  margin-top: 90px;
+  padding: 0 50px;
+}
+.blog-sub-head {
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.blog-head {
+  text-align: center;
+  letter-spacing: 6px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.blog-text {
+  color: #787878;
+}
+.blog-container-item {
+  margin-top: 40px;
+  width: 350px;
+  opacity: 0.7;
+  transition: 350ms;
+}
+.slick-slide > div {
+  margin: 0 15px;
+}
+.blog-container-item:hover {
+  opacity: 1;
+}
+.blog-image img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top, center;
+}
+.blog-title {
+  font-weight: 400;
+  margin-top: 10px;
+}
+.Read-more {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 11px;
+}
