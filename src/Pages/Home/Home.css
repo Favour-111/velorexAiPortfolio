@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 .short-content-item {
   width: 30%;
@@ -67,6 +68,103 @@
   color: #000;
   font-size: 45px;
 }
+.who-are-we {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.who-button {
+  padding: 9px 20px;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1.5px solid white;
+  margin-top: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  transition: 350ms;
+}
+.who-button:hover {
+  background-color: white;
+  color: black;
+}
+.who-section {
+  display: flex;
+  background: url("https://images.unsplash.com/photo-1637775297458-7443ffd545b2?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-top: 70px;
+  padding: 90px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.who-left {
+  position: relative;
+  width: 400px;
+  margin-right: 40px;
+}
+
+.team-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bulb-img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  bottom: -30px;
+  right: -30px;
+  object-fit: cover;
+  border: 5px solid #0f0f0f;
+  background: white;
+}
+
+.who-right {
+  max-width: 500px;
+}
+
+.who-label {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.who-head {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.who-text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.7em;
+  color: #d3d3d3;
+  font-weight: 500;
+}
+.stand-for-cont {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-top: 100px;
+}
 @keyframes blink {
   0%,
   50% {
@@ -82,6 +180,28 @@
     font-size: 40px;
   }
 }
+
+@media screen and (max-width: 970px) {
+  .who-Text-container {
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .who-label {
+    margin-top: 40px;
+  }
+  .who-section {
+    padding: 60px 20px;
+    margin-top: 30px;
+  }
+  .who-right {
+    padding: 10px;
+  }
+  .who-button {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+}
 @media screen and (max-width: 890px) {
   .banner-text-1 {
     font-size: 18px;
@@ -94,6 +214,31 @@
     gap: 40px;
   }
   .short-content-item {
+    width: 100%;
+  }
+  .who-are-we-main-img-cont {
+    height: 500px !important;
+    position: relative;
+    width: 100%;
+    background-color: red;
+  }
+
+  .who-we-are-container {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+  .who-Text-container {
+    width: 100%;
+  }
+  .who-are-we {
+    height: auto;
+    width: 100%;
+  }
+  .who-image-container {
+    position: relative;
+  }
+  .who-text {
     width: 100%;
   }
 }
@@ -135,5 +280,21 @@
   }
   .short-content-content {
     font-size: 14px;
+  }
+
+  .who-we-are-container {
+    position: relative;
+  }
+  .who-Text-container {
+    width: 100% !important;
+    padding: 50px;
+  }
+  .who-head {
+    width: 100%;
+    font-size: 30px;
+  }
+  .who-Text-container {
+    width: 100%;
+    font-size: 15px;
   }
 }

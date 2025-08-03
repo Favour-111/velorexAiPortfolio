@@ -60,39 +60,90 @@ const Home = () => {
           </div>
           <div className="company-name">Velorex AI</div>
         </div>
-        <div className="short-content-container">
-          <div className="short-content-item">
-            <div>
-              <GoLightBulb className="short-content-icon" />
-            </div>
-            <div className="short-content-head">INNOVATORS</div>
-            <div className="short-content-content">
-              Shaping the future with bold ideas. We blend technology and
-              creativity to build lasting impact.
-            </div>
+      </div>
+      <div className="short-content-container">
+        <div
+          data-aos="fade-in"
+          data-aos-duration="1500"
+          className="short-content-item"
+        >
+          <div>
+            <GoLightBulb className="short-content-icon" />
           </div>
-          <div className="short-content-item">
-            <div>
-              <GoGraph className="short-content-icon" />
-            </div>
-            <div className="short-content-head">STRATEGISTS</div>
-            <div className="short-content-content">
-              Turning insights into action. We design smart, data-driven
-              solutions that drive real results.
-            </div>
+          <div className="short-content-head">INNOVATORS</div>
+          <div className="short-content-content">
+            Shaping the future with bold ideas. We blend technology and
+            creativity to build lasting impact.
           </div>
-          <div className="short-content-item">
-            <div>
-              <IoConstructOutline className="short-content-icon" />
-            </div>
-            <div className="short-content-head">BUILDERS</div>
-            <div className="short-content-content">
-              From concept to completion. We bring your vision to life with
-              precision and passion.
-            </div>
+        </div>
+        <div
+          data-aos="fade-in"
+          data-aos-duration="1500"
+          className="short-content-item"
+        >
+          <div>
+            <GoGraph className="short-content-icon" />
+          </div>
+          <div className="short-content-head">STRATEGISTS</div>
+          <div className="short-content-content">
+            Turning insights into action. We design smart, data-driven solutions
+            that drive real results.
+          </div>
+        </div>
+        <div
+          data-aos="fade-in"
+          data-aos-duration="1500"
+          className="short-content-item"
+        >
+          <div>
+            <IoConstructOutline className="short-content-icon" />
+          </div>
+          <div className="short-content-head">BUILDERS</div>
+          <div className="short-content-content">
+            From concept to completion. We bring your vision to life with
+            precision and passion.
           </div>
         </div>
       </div>
+
+      <div className="who-section">
+        <div className="who-left">
+          <img
+            src="https://images.unsplash.com/photo-1595074475099-633660478a7a?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Team Working"
+            className="team-img"
+          />
+          <img
+            src=" https://media.istockphoto.com/id/160057270/photo/bulb-in-hand.jpg?s=612x612&w=0&k=20&c=9fWWNG6sdUxotWqRD4LG7T7-2hkmm55ZXrquyjo7u9I="
+            alt="Bulb"
+            className="bulb-img"
+          />
+        </div>
+        <div className="who-right">
+          <p className="who-label" data-aos="fade-in" data-aos-duration="1500">
+            WHO WE ARE
+          </p>
+          <div className="who-head" data-aos="fade-in" data-aos-duration="1500">
+            PASSIONATE
+            <br />
+            THINKERS
+          </div>
+          <p className="who-text" data-aos="fade-in" data-aos-duration="1500">
+            We are driven by creativity and a clear sense of purpose, bringing
+            ideas to life through thoughtful design and innovation. Our mission
+            is to create solutions that not only look great but also make a real
+            impact. Together, let's turn your vision into something remarkable.
+          </p>
+          <button
+            className="who-button"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            MORE ABOUT US
+          </button>
+        </div>
+      </div>
+      <div className="stand-for-cont">What we stand for</div>
     </div>
   );
 };
