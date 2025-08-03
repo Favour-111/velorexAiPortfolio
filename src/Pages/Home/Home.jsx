@@ -4,6 +4,8 @@ import "./Home.css";
 import NavSm from "../../components/NavSm/NavSm";
 import { GoGraph, GoLightBulb } from "react-icons/go";
 import { IoConstructOutline } from "react-icons/io5";
+import FeaturesSection from "../../components/FeatureSection/FeatureSection";
+import Service from "../../components/Services/Service";
 const Home = () => {
   const baseText = "In ";
   const words = [
@@ -143,7 +145,19 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="stand-for-cont">What we stand for</div>
+      <div
+        className="stand-for-cont"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+      >
+        What we stand for
+      </div>
+      <div data-aos="fade-in" data-aos-duration="1500">
+        <FeaturesSection />
+      </div>
+      <div>
+        <Service />
+      </div>
     </div>
   );
 };

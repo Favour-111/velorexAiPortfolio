@@ -154,8 +154,9 @@
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.7em;
+
   color: #d3d3d3;
-  font-weight: 500;
+  font-weight: 300;
 }
 .stand-for-cont {
   text-align: center;
@@ -163,7 +164,8 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 7px;
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 @keyframes blink {
   0%,
@@ -251,6 +253,9 @@
   }
   .company-name {
     font-size: 12px;
+  }
+  .stand-for-cont {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 580px) {

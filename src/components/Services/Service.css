@@ -1,0 +1,110 @@
+.service-container {
+  display: flex;
+  flex-direction: column;
+  background: url("https://images.unsplash.com/photo-1637775297458-7443ffd545b2?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-top: 70px;
+  padding: 90px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.service {
+  height: auto;
+}
+.service-sub-cont {
+  margin-top: 100px;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.service-head {
+  margin-top: 20px;
+  width: 80%;
+  font-size: 35px;
+  letter-spacing: 8px;
+  font-weight: 200;
+  text-align: center;
+}
+.service-head-container-2 {
+  margin-top: 20px;
+  color: #787878;
+  font-size: 14px;
+}
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -80px;
+  width: 100%;
+  padding: 40px 70px;
+}
+.service-content-items {
+  width: 34%;
+  background-color: white;
+  height: 300px;
+  border-radius: 10px;
+}
+.service-content-items {
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.service-content-heading {
+  font-weight: 600;
+  font-size: 17px;
+}
+.service-content-cont {
+  color: #787878;
+}
+@media screen and (max-width: 980px) {
+  .service-content {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .service-container {
+    padding: 30px;
+  }
+  .service-content {
+    margin-top: -40px;
+    padding: 20px;
+  }
+  .service-content-items {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .service-sub-cont {
+    font-size: 12px;
+  }
+  .service-sub-cont {
+    margin-top: 0;
+  }
+  .service-head {
+    font-size: 20px;
+    width: 100%;
+    letter-spacing: 5px;
+  }
+  .service-container {
+    padding: 30px;
+  }
+  .service-content {
+    margin-top: -90px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .service-content-items {
+    height: auto;
+    width: 100%;
+  }
+}
