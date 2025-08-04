@@ -139,4 +139,10 @@
   .blog-container-item {
     margin-top: 20px;
   }
+  .blog-overlay {
+    padding: 10px;
+  }
+  .blog-large-container {
+    width: 100%;
+  }
 }
