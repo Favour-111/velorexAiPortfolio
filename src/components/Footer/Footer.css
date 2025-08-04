@@ -180,3 +180,8 @@
     margin-bottom: 30px !important;
   }
 }
+@media screen and (max-width: 500px) {
+  .footer-bottom-container {
+    padding: 20px;
+  }
+}

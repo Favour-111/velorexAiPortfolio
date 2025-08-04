@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Blog.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { IoClose } from "react-icons/io5";
 const Blog = () => {
   const blogs = [
     {
@@ -100,6 +101,7 @@ const Blog = () => {
       },
     ],
   };
+  const [blogOpen, setBlogOpen] = useState(false);
   return (
     <div>
       <div className="blog-container">
@@ -113,7 +115,12 @@ const Blog = () => {
           <Slider {...settings}>
             {blogs.map((item) => {
               return (
-                <div className="blog-container-item">
+                <div
+                  className="blog-container-item"
+                  onClick={() => {
+                    setBlogOpen(true);
+                  }}
+                >
                   <div className="blog-image">
                     <img src={item.image} alt="" />
                   </div>
@@ -125,6 +132,47 @@ const Blog = () => {
           </Slider>
         </div>
       </div>
+      {blogOpen ? (
+        <div className="blog-overlay">
+          <div className="blog-large-container">
+            <div
+              className="cancel-btn"
+              onClick={() => {
+                setBlogOpen(false);
+              }}
+            >
+              <IoClose size={20} />
+            </div>
+            <div className="blog-large-image">
+              <img
+                src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div className="blog-large-title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, laudantium!
+            </div>
+            <div className="blog-large-Date">3/5/2030</div>
+            <div className="blog-large-Author">Obaloluwa</div>
+            <div className="blog-large-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+              aspernatur, vel incidunt, amet quod perferendis molestias impedit
+              magnam ipsam harum, eligendi in? Ad corporis ex voluptatem
+              veritatis, saepe dolorem quo excepturi adipisci laboriosam et!
+              Accusamus cumque, unde vel exercitationem quisquam veniam
+              obcaecati dolore adipisci maxime voluptates mollitia saepe. Natus
+              commodi blanditiis nulla ipsa magnam vel quasi, necessitatibus
+              explicabo molestiae, nemo facilis voluptatibus! Excepturi maxime
+              commodi, natus possimus, non optio consequatur voluptates
+              repellendus minus perspiciatis blanditiis accusamus deleniti.
+              Nostrum autem perferendis exercitationem est facilis debitis
+              consequuntur labore voluptas ut odio repudiandae, nulla quia nemo
+              laborum voluptatem expedita natus, doloribus facere assumenda?
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };

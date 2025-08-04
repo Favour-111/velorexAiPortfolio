@@ -51,7 +51,78 @@
 .slick-slider {
   overflow: hidden;
 }
+.blog-overlay {
+  background-color: rgba(0, 0, 0, 0.34);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-large-container {
+  height: 500px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: scroll;
+  padding: 20px;
+  position: relative;
+  .cancel-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .blog-large-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .blog-large-Date {
+    color: #787878;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .blog-large-Author {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .blog-large-content {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
 
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 @media screen and (max-width: 768px) {
   .blog-container {
     padding: 10px;
