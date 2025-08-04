@@ -6,57 +6,61 @@ import Slider from "react-slick";
 const Blog = () => {
   const blogs = [
     {
-      image: "https://source.unsplash.com/featured/?reactjs,coding",
+      image:
+        "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "Mastering React: Hooks, Context & Performance Tips",
-      blogcontent:
-        "React has become the go-to library for building modern web apps, but optimizing performance and managing state efficiently remains a challenge. In this comprehensive guide, we break down advanced React concepts including `useEffect`, `useMemo`, `useCallback`, and Context API to help you reduce unnecessary renders, avoid prop‑drilling, and maintain clean, scalable code. We also delve into practical performance strategies—lazy loading, code splitting with `React.lazy` and `Suspense`, memoization best practices, and using React Profiler to catch performance bottlenecks early. By the end of this post, you'll be equipped with actionable techniques to build faster, smarter React applications suited for both small-scale UI and complex enterprise projects.",
+      blogcontent: "React has become the go‑to library for modern web apps...",
       date: "August 1, 2025",
       author: "Obaloluwa Omojola",
     },
     {
-      image: "https://source.unsplash.com/featured/?backend,programming",
+      image:
+        "https://media.istockphoto.com/id/1317706831/photo/api-application-programming-interface-software-development-tool-business-modern-technology.jpg?s=1024x1024&w=is&k=20&c=L3b3Yi5MhR--0Y4O_AaFl6ARfDeM9BWfwvsGqECf6hw=",
       name: "Backend Battle: Node.js vs. Django for Modern APIs",
-      blogcontent:
-        "Choosing the right backend framework is critical for project success, especially when building RESTful APIs or full-stack apps. In this deep dive, we compare Node.js (JavaScript) and Django (Python) across essential criteria: request handling, middleware architecture, ORM capabilities, scalability, community support, and developer productivity. Node.js excels in event-driven real-time applications, while Django offers an integrated admin interface, authentication, and security out-of-the-box. We provide real-world use cases, pros/cons of each stack, and guidelines to help you make a decision based on team expertise, project scale, and long-term maintenance considerations.",
+      blogcontent: "Choosing the right backend framework is critical...",
       date: "July 28, 2025",
       author: "Adaeze Nwosu",
     },
     {
-      image: "https://source.unsplash.com/featured/?developer,workspace",
+      image:
+        "https://plus.unsplash.com/premium_photo-1685086785013-acc71c40e5fe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "Top 10 VS Code Extensions Every Developer Should Use",
       blogcontent:
-        "VS Code is famous for its extensibility—and when paired with the right tools, it becomes a productivity powerhouse. In this post, we highlight ten must-have extensions: Prettier for consistent formatting, ESLint for error catching, GitLens for deeper Git insights, Live Server for real-time feedback, TabNine (AI‑powered autocomplete), REST Client for quick API testing, Docker support, IntelliSense enhancements, Markdown preview tools, and dark/light theme switchers for accessibility. Each extension includes setup tips, use‑cases, and how they integrate into everyday workflows—from front‑end development to full-stack automation.",
+        "VS Code is famous for its extensibility—and paired with the right tools...",
       date: "July 25, 2025",
       author: "David Akinyemi",
     },
     {
-      image: "https://source.unsplash.com/featured/?ux,web",
+      image:
+        "https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "Designing for Devs: UI/UX Basics Every Coder Should Know",
       blogcontent:
-        "You don't need formal design training to build interfaces that look professional and function intuitively. This article covers foundational UI/UX principles every developer should understand: layout and spacing with whitespace, visual hierarchy, accessible color palettes, button feedback, typographic clarity, navigation patterns, mobile-first responsiveness, and user flows. We also offer guidelines on collaborating with designers, preparing design tokens, and contributing to wireframes. By the end, you’ll be better equipped to integrate usability into your code, improving both user satisfaction and design-developer communication.",
+        "You don't need formal design training to build interfaces that look professional...",
       date: "July 20, 2025",
       author: "Zainab Sule",
     },
     {
-      image: "https://source.unsplash.com/featured/?database,code",
+      image:
+        "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "Building Scalable Apps with MongoDB and Mongoose",
       blogcontent:
-        "MongoDB offers schema flexibility, high performance, and horizontal scaling—perfect for agile application development. In this guide, we cover setting up a MongoDB cluster, designing effective document models, and incorporating Mongoose in a Node.js stack. Topics include schema definitions, validation, population for relations, pagination, aggregation pipelines, indexing, and performance tuning. You'll also learn best practices for error handling, versioning documents, and structuring schema migrations. This article equips developers to build robust backends with MongoDB and Mongoose that scale, remain maintainable, and adapt to changing data needs.",
+        "MongoDB offers schema flexibility and horizontal scaling—perfect for modern development...",
       date: "July 15, 2025",
       author: "Uche Eze",
     },
     {
-      image: "https://source.unsplash.com/featured/?git,programming",
+      image:
+        "https://images.unsplash.com/photo-1607743386830-f198fbd7f9c4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       name: "Understanding Git the Right Way: From Beginner to Pro",
       blogcontent:
-        "Git is an indispensable tool for developers but many rely only on basic commands. In this detailed tutorial, we begin with concepts like repositories, branching, merging, and commits, then advance to techniques such as interactive rebasing, resolving complex merge conflicts, cherry‑picking changes, stashing work, managing remote branches, and using Git hooks. We'll also explore branching strategies like Git Flow and trunk-based workflows, common pitfalls, and collaborative Git etiquette. With real code examples and troubleshooting tips, this guide helps elevate your version control skills, whether you're working solo or collaborating on large projects.",
+        "Git is a must‑know skill for every developer but many only scratch the surface...",
       date: "July 10, 2025",
       author: "Chinedu Obi",
     },
   ];
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,

@@ -48,3 +48,24 @@
   font-weight: 600;
   font-size: 11px;
 }
+.slick-slider {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .blog-sub-head {
+    font-size: 12px;
+  }
+  .blog-head {
+    letter-spacing: 4px;
+    font-size: 25px;
+  }
+  .blog-container-item {
+    margin-top: 20px;
+  }
+}

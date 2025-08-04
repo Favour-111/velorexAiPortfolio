@@ -9,6 +9,7 @@ import Service from "../../components/Services/Service";
 import WebsiteExpert from "../../components/WebsiteExpert/WebsiteExpert";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Blog from "../../components/Blog/Blog";
+import Footer from "../../components/Footer/Footer";
 const Home = () => {
   const baseText = "In ";
   const words = [
@@ -169,6 +170,9 @@ const Home = () => {
       </div>
       <div>
         <Blog />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

@@ -1,0 +1,59 @@
+.footer-container {
+  display: ;
+}
+.footer-top {
+  background: url("https://plus.unsplash.com/premium_photo-1672940671025-113a634f83d1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 100px;
+}
+.footer-top-over-lay {
+  background-color: rgba(0, 0, 0, 0.16);
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  button {
+    margin-top: 30px;
+    padding: 9px 30px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: white;
+  }
+}
+.footer-top-head {
+  font-size: 40px;
+  color: white;
+  letter-spacing: 5px;
+  width: 450px;
+  text-align: center;
+}
+.footer-top-content {
+  margin-top: 20px;
+  width: 400px;
+  color: #d3d3d3;
+  text-align: center;
+}
+.footer-bottom {
+  background: url("https://static.vecteezy.com/system/resources/previews/001/225/154/non_2x/black-low-poly-geometric-background-vector.jpg");
+  height: 500px;
+}
+@media screen and (max-width: 600px) {
+  .footer-top-over-lay {
+    padding: 20px;
+  }
+  .footer-top-head {
+    font-size: 20px;
+    width: 100%;
+  }
+  .footer-top-content {
+    width: 100%;
+  }
+}
