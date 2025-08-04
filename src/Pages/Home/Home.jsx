@@ -10,6 +10,7 @@ import WebsiteExpert from "../../components/WebsiteExpert/WebsiteExpert";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Blog from "../../components/Blog/Blog";
 import Footer from "../../components/Footer/Footer";
+import BackToTop from "../../components/BackToTop/BackToTop";
 const Home = () => {
   const baseText = "In ";
   const words = [
@@ -173,6 +174,9 @@ const Home = () => {
       </div>
       <div>
         <Footer />
+      </div>
+      <div>
+        <BackToTop />
       </div>
     </div>
   );

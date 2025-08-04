@@ -1,0 +1,30 @@
+.backtoTop-container {
+  position: fixed;
+  z-index: 1000000;
+  cursor: pointer;
+  right: 20px;
+  bottom: 20px;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+
+  /* Bounce Animation */
+  animation: bounce 1s infinite alternate;
+}
+
+/* Keyframes for Bounce Effect */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

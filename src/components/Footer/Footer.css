@@ -1,6 +1,3 @@
-.footer-container {
-  display: ;
-}
 .footer-top {
   background: url("https://plus.unsplash.com/premium_photo-1672940671025-113a634f83d1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   height: 500px;
@@ -17,6 +14,7 @@
   justify-content: center;
   flex-direction: column;
   button {
+    color: black !important;
     margin-top: 30px;
     padding: 9px 30px;
     border-radius: 20px;
@@ -46,8 +44,12 @@
   height: 500px;
 }
 @media screen and (max-width: 600px) {
+  .footer-top {
+    height: 400px;
+  }
   .footer-top-over-lay {
     padding: 20px;
+    height: 400px;
   }
   .footer-top-head {
     font-size: 20px;
