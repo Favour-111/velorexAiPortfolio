@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
+import Gallery from "./Pages/Gallery/Gallery";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Route element={<Home />} path="/" />
       <Route element={<About />} path="/about-us" />
       <Route element={<Contact />} path="/contact-us" />
+      <Route element={<Gallery />} path="/gallery" />
     </Routes>
   );
 }
