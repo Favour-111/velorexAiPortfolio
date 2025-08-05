@@ -44,7 +44,9 @@ const Nav = () => {
                 </Link>
               </li>
               <li onClick={() => window.scrollTo(0, 0)}>
-                <Link className="Nav-Links">Contact</Link>
+                <Link className="Nav-Links" to="/contact-us">
+                  Contact
+                </Link>
               </li>
               <li onClick={() => window.scrollTo(0, 0)}>
                 <Link className="Nav-Links">Gallery</Link>
