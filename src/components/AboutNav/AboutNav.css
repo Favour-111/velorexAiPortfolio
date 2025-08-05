@@ -4,14 +4,35 @@
   width: 100%;
   padding: 15px 40px;
   background-color: transparent;
-  color: white;
+  color: rgb(21, 21, 21);
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
   z-index: 999;
 }
 
-.navbar.scrolled {
+.navbar.scrolled2 {
   background-color: black;
+  color: white !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  .Nav-Logo2 {
+    color: white;
+  }
+  .Nav-Links2 {
+    color: rgb(206, 206, 206) !important;
+  }
+  .Nav-Links2:hover {
+    color: white !important;
+  }
+  .Nav-Buttons2 {
+    color: white !important;
+  }
+  .Nav-Buttons2 button {
+    border: 1px solid white !important;
+    color: white !important;
+  }
+  button:hover {
+    border: 1px solid #d3d3d300 !important;
+    background-color: #d3d3d36c;
+  }
 }
 
 .navbar-content {
@@ -20,17 +41,18 @@
   align-items: center;
   width: 100%;
 }
-.Nav-Logo {
+.Nav-Logo2 {
   flex: 1;
-  color: white !important;
   display: flex;
   align-items: center;
+  color: #000000;
   gap: 5px;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
 .Nav-items {
   flex: 1;
   padding-top: 10px;
@@ -45,94 +67,46 @@
   li {
     list-style-type: none;
     text-transform: uppercase;
-    .Nav-Links {
+    .Nav-Links2 {
       font-size: 11.5px;
       letter-spacing: 1px;
       font-weight: 500;
       text-decoration: none;
-      color: rgb(172, 172, 172);
+      color: rgb(72, 72, 72);
       transition: 350ms;
     }
-    .Nav-Links:hover {
-      color: white !important;
+    .Nav-Links2:hover {
+      color: rgb(5, 5, 5) !important;
     }
   }
 }
-.Nav-Buttons {
+.Nav-Buttons2 {
   flex: 1;
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: flex-end;
-  color: white !important;
-}
-/* From Uiverse.io by Creatlydev */
-.button {
-  line-height: 1;
-  text-decoration: none;
-  display: inline-flex;
-  border: none;
-  cursor: pointer;
+  color: rgb(13, 13, 13) !important;
+  button {
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: 400;
+    padding: 10px 15px;
 
-  border: 1px solid #fff;
-  align-items: center;
-  gap: 0.75rem;
-  background-color: transparent;
-  color: #ffffff;
-  border-radius: 10rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  padding-left: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: background-color 0.3s;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: 250ms;
+  }
+  button:hover {
+    border: 1px solid #d3d3d300 !important;
+    background-color: #3c3c3c6c;
+  }
 }
-
-.button__icon-wrapper {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  color: var(--clr);
-  background-color: #fff;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-
-.button:hover {
-  background-color: #ffffff;
-  color: #000;
-}
-
-.button:hover .button__icon-wrapper {
-  color: #000;
-}
-
-.button__icon-svg {
-  color: #000 !important;
-  width: 7px;
-}
-.button__icon-svg--copy {
-  position: absolute;
-  transform: translate(-150%, 150%);
-}
-
-.button:hover .button__icon-svg:first-child {
-  transition: transform 0.3s ease-in-out;
-  transform: translate(150%, -150%);
-}
-
-.button:hover .button__icon-svg--copy {
-  transition: transform 0.3s ease-in-out 0.1s;
-  transform: translate(0);
-}
-
 .Contact-side-Bar-container {
   position: fixed;
   background-color: #111111;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Nav.css";
+import "./AboutNav.css";
 import { GiArtificialHive } from "react-icons/gi";
 import { Link } from "react-router";
 import { PiCirclesThreePlusLight } from "react-icons/pi";
@@ -9,7 +9,7 @@ import { TbMenuDeep } from "react-icons/tb";
 import { MdClose, MdLocationOn } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-const Nav = () => {
+const AboutNav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [barIsOpened, setBarIsOpened] = useState(false);
   useEffect(() => {
@@ -23,35 +23,35 @@ const Nav = () => {
 
   return (
     <div>
-      <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+      <nav className={`navbar ${isScrolled ? "scrolled2" : ""}`}>
         <div className="navbar-content">
-          <div className="Nav-Logo">
-            <div>
+          <div className="Nav-Logo2">
+            <div className={barIsOpened ? "OpenedLogo" : ""}>
               <GiArtificialHive className="mb-1" />
             </div>
             <div>Velorex</div>
           </div>
           <div className="Nav-items">
             <ul className="nav-list d-flex">
-              <li>
-                <Link to="/" className="Nav-Links">
+              <li onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/" className="Nav-Links2">
                   Home
                 </Link>
               </li>
               <li onClick={() => window.scrollTo(0, 0)}>
-                <Link to="/about-us" className="Nav-Links">
+                <Link to="/about-us" className="Nav-Links2">
                   About
                 </Link>
               </li>
               <li onClick={() => window.scrollTo(0, 0)}>
-                <Link className="Nav-Links">Contact</Link>
+                <Link className="Nav-Links2">Contact</Link>
               </li>
               <li onClick={() => window.scrollTo(0, 0)}>
-                <Link className="Nav-Links">Gallery</Link>
+                <Link className="Nav-Links2">Gallery</Link>
               </li>
             </ul>
           </div>
-          <div className="Nav-Buttons">
+          <div className="Nav-Buttons2">
             <div
               style={{ cursor: "pointer" }}
               onClick={() => setBarIsOpened(true)}
@@ -127,4 +127,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default AboutNav;

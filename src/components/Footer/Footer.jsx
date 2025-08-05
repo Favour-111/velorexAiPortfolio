@@ -24,7 +24,9 @@ const Footer = () => {
               Our team is passionate about creating designs that not only look
               great but also drive results.
             </div>
-            <button>Contact us</button>
+            <button className="contact-btn">
+              <span>Contact us</span>
+            </button>
           </div>
         </div>
         <div className="footer-bottom">

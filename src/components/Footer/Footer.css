@@ -13,19 +13,62 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  button {
-    color: black !important;
-    margin-top: 30px;
-    padding: 9px 30px;
-    border-radius: 20px;
-    border: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    background-color: white;
-  }
 }
+
+/* From Uiverse.io by BHARGAVPATEL1244 */
+.contact-btn {
+  background-color: #787878;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 30px !important;
+  color: rgb(0, 0, 0) !important;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.contact-btn span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.contact-btn:hover span {
+  color: black;
+}
+
+.contact-btn::before,
+.contact-btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.contact-btn::before {
+  content: "";
+  background: #ffffff;
+  width: 120%;
+  color: black !important;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.contact-btn:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
 .footer-top-head {
   font-size: 40px;
   color: white;

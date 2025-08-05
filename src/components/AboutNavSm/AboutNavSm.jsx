@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./NavSm.css";
+import "./AboutNavSm.css";
 import { GiArtificialHive } from "react-icons/gi";
 import { Link } from "react-router";
 import { PiCirclesThreePlusLight } from "react-icons/pi";
@@ -10,7 +10,7 @@ import { MdClose, MdLocationOn } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoClose, IoMail } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-const NavSm = () => {
+const AboutNavSm = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [navIsOpened, setNavIsOpened] = useState(false);
   useEffect(() => {
@@ -24,7 +24,7 @@ const NavSm = () => {
 
   return (
     <div>
-      <nav className={`navbar-sm ${isScrolled ? "scrolled" : ""}`}>
+      <nav className={`navbar-sm2 ${isScrolled ? "scrolled" : ""}`}>
         <div className="navbar-sm-content">
           <div className="Nav-Logo-sm">
             <div>
@@ -33,7 +33,7 @@ const NavSm = () => {
             <div>Velorex</div>
           </div>
 
-          <div className="Nav-Buttons-sm">
+          <div className="Nav-Buttons-sm2">
             <button>
               <div>Get in touch</div>
               <div>
@@ -42,11 +42,14 @@ const NavSm = () => {
             </button>
             {navIsOpened ? (
               <div onClick={() => setNavIsOpened(false)}>
-                <IoClose color="white" size={20} />
+                <IoClose color={isScrolled ? "white" : "black"} size={20} />
               </div>
             ) : (
               <div onClick={() => setNavIsOpened(true)}>
-                <RxHamburgerMenu color="white" size={20} />
+                <RxHamburgerMenu
+                  color={isScrolled ? "white" : "black"}
+                  size={20}
+                />
               </div>
             )}
           </div>
@@ -54,10 +57,7 @@ const NavSm = () => {
 
         <div className={`Nav-items-sm ${navIsOpened ? "opened" : ""}`}>
           <ul className="nav-list-sm">
-            <li
-              onClick={() => window.scrollTo(0, 0)}
-              className="d-flex align-items-center"
-            >
+            <li className="d-flex align-items-center bg-dark">
               <Link className="Nav-Links">Home</Link>
             </li>
             <li
@@ -85,4 +85,4 @@ const NavSm = () => {
   );
 };
 
-export default NavSm;
+export default AboutNavSm;

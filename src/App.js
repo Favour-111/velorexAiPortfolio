@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, Routes } from "react-router";
 import Home from "./Pages/Home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import About from "./Pages/About/About";
 
 function App() {
   useEffect(() => {
@@ -16,6 +16,7 @@ function App() {
   return (
     <Routes>
       <Route element={<Home />} path="/" />
+      <Route element={<About />} path="/about-us" />
     </Routes>
   );
 }
