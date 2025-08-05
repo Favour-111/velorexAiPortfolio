@@ -184,4 +184,10 @@
   .footer-bottom-container {
     padding: 20px;
   }
+  .footer-itm ul li .footer-link-itm {
+    font-size: 14px;
+  }
+  .address {
+    font-size: 14px;
+  }
 }
