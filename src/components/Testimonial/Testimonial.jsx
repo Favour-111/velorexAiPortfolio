@@ -49,12 +49,26 @@ const Testimonial = () => {
   return (
     <div>
       <div className="testimonial-container">
-        <div className="testimonial-sub-head">OUR CLIENTS TESTIMONIALS</div>
-        <div className="testimonial-head">
+        <div
+          className="testimonial-sub-head"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+        >
+          OUR CLIENTS TESTIMONIALS
+        </div>
+        <div
+          className="testimonial-head"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+        >
           Trusted by
           <br /> leading experts
         </div>
-        <div className="testimonial-images">
+        <div
+          className="testimonial-images"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+        >
           {testimonials.map((t, index) => (
             <img
               key={index}
@@ -67,7 +81,11 @@ const Testimonial = () => {
             />
           ))}
         </div>
-        <div className="testimonial-content fade-in">
+        <div
+          className="testimonial-content fade-in"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+        >
           <p>{testimonials[activeIndex].testimonial}</p>
           <h3>{testimonials[activeIndex].name}</h3>
         </div>

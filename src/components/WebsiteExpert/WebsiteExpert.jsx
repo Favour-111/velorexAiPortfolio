@@ -35,7 +35,11 @@ const WebsiteExpert = () => {
   };
   return (
     <div>
-      <div className="WebsiteExpert-container">
+      <div
+        className="WebsiteExpert-container"
+        data-aos="fade-in"
+        data-aos-duration="1500"
+      >
         <div className="expert-left">
           <div className="expert-heading">Websites Experts</div>
           <div className="expert-content">

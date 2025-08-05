@@ -17,14 +17,26 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-top-over-lay">
-            <div className="footer-top-head">
+            <div
+              className="footer-top-head"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
               LETS BRING YOUR VISION TO LIFE
             </div>
-            <div className="footer-top-content">
+            <div
+              className="footer-top-content"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
               Our team is passionate about creating designs that not only look
               great but also drive results.
             </div>
-            <button className="contact-btn">
+            <button
+              className="contact-btn"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
               <span>Contact us</span>
             </button>
           </div>

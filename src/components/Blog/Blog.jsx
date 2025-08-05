@@ -116,13 +116,19 @@ const Blog = () => {
   return (
     <div>
       <div className="blog-container">
-        <div className="blog-sub-head">Latest News</div>
-        <div className="blog-head">
+        <div
+          className="blog-sub-head"
+          data-aos="fade-in"
+          data-aos-duration="1500"
+        >
+          Latest News
+        </div>
+        <div className="blog-head" data-aos="fade-in" data-aos-duration="1500">
           Latest from <br />
           our blog
         </div>
 
-        <div className="watching">
+        <div className="watching" data-aos="fade-in" data-aos-duration="1500">
           <Slider {...settings}>
             {blogs.map((item) => {
               return (

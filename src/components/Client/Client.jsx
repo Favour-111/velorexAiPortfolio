@@ -70,9 +70,27 @@ const Client = () => {
     <div>
       <div className="working-section">
         <div className="working-section-overlay">
-          <div className="working-sub-head">Let's work together</div>
-          <div className="working-head">BUILD AN AMZING SITE TODAY!</div>
-          <button className="fancy-button">Get In Touch</button>
+          <div
+            className="working-sub-head"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            Let's work together
+          </div>
+          <div
+            className="working-head"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            BUILD AN AMZING SITE TODAY!
+          </div>
+          <button
+            className="fancy-button"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
+            Get In Touch
+          </button>
         </div>
       </div>
       <div className="client-slider-container ">

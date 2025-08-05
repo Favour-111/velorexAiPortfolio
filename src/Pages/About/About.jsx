@@ -72,9 +72,19 @@ const About = () => {
       <div className="percentage-background">
         <div className="percentage-overlay">
           <div>
-            <div className="development-head">Development Skill</div>
+            <div
+              className="development-head"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
+              Development Skill
+            </div>
             <div className="development-p-itm-body">
-              <div className="development-itm">
+              <div
+                className="development-itm"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+              >
                 <div className="development-percentage-bar">
                   <div className="development-bar">
                     <div className="development-name-cont">
@@ -84,7 +94,11 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="development-itm">
+              <div
+                className="development-itm"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+              >
                 <div className="development-percentage-bar">
                   <div className="development-bar2">
                     <div className="development-name-cont">
@@ -94,7 +108,11 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="development-itm">
+              <div
+                className="development-itm"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+              >
                 <div className="development-percentage-bar">
                   <div className="development-bar3">
                     <div className="development-name-cont">
@@ -104,7 +122,11 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="development-itm">
+              <div
+                className="development-itm"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+              >
                 <div className="development-percentage-bar">
                   <div className="development-bar4">
                     <div className="development-name-cont">
