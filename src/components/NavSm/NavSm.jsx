@@ -58,13 +58,17 @@ const NavSm = () => {
               onClick={() => window.scrollTo(0, 0)}
               className="d-flex align-items-center"
             >
-              <Link className="Nav-Links">Home</Link>
+              <Link className="Nav-Links" to="/">
+                Home
+              </Link>
             </li>
             <li
               onClick={() => window.scrollTo(0, 0)}
               className="d-flex align-items-center"
             >
-              <Link className="Nav-Links">About</Link>
+              <Link className="Nav-Links" to="/about-us">
+                About
+              </Link>
             </li>
             <li
               onClick={() => window.scrollTo(0, 0)}

@@ -122,6 +122,12 @@
   .development-percentage-bar {
     width: 100% !important;
   }
+  .percentage-overlay {
+    padding: 20px;
+  }
+  .development-p-itm-body {
+    margin-top: 0 !important;
+  }
 }
 @media screen and (max-width: 680px) {
   .about-head {

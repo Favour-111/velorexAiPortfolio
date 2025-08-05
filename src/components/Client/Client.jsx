@@ -69,9 +69,11 @@ const Client = () => {
   return (
     <div>
       <div className="working-section">
-        <div className="working-sub-head">Let's work together</div>
-        <div className="working-head">BUILD AN AMZING SITE TODAY!</div>
-        <button className="fancy-button">Get In Touch</button>
+        <div className="working-section-overlay">
+          <div className="working-sub-head">Let's work together</div>
+          <div className="working-head">BUILD AN AMZING SITE TODAY!</div>
+          <button className="fancy-button">Get In Touch</button>
+        </div>
       </div>
       <div className="client-slider-container ">
         <div className="client-text">
