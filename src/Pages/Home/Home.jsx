@@ -11,6 +11,7 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import Blog from "../../components/Blog/Blog";
 import Footer from "../../components/Footer/Footer";
 import BackToTop from "../../components/BackToTop/BackToTop";
+import PopUp from "../../components/PopUp/PopUp";
 const Home = () => {
   const baseText = "In ";
   const words = [
@@ -58,6 +59,7 @@ const Home = () => {
       <div className="Banner">
         <Nav />
         <NavSm />
+        <PopUp />
         <div className="banner-text-container">
           <div className="banner-text-1">Full-stack Agency</div>
           <div className="Written-Text">
