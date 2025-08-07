@@ -43,6 +43,7 @@
 }
 .Nav-Logo2 {
   flex: 1;
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #000000;
@@ -160,6 +161,10 @@
   margin-top: 10px;
   font-weight: 300;
   text-align: center;
+  text-decoration: none !important;
+}
+a {
+  text-decoration: none !important;
 }
 @media screen and (max-width: 840px) {
   .navbar {

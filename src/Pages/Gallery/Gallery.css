@@ -1,77 +1,115 @@
-.gallery-container {
+.gallery-banner {
+  background: url("https://preview.treethemes.com/pine/maindemo-light/wp-content/uploads/sites/3/2022/08/shapes-project.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.gallery-banner-text {
+  height: 100%;
+  background-color: rgba(224, 224, 224, 0.639);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   flex-direction: column;
-  text-align: center;
-  .text {
-    font-size: 30px;
-    color: #787878;
-    font-weight: 600;
-  }
-  .text2 {
-  }
 }
-/* From Uiverse.io by adamgiebl */
-.cssbuttons-io-button {
+.gallery-sub-head {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.gallery-head {
+  letter-spacing: 9px;
+  font-size: 40px;
   margin-top: 10px;
-  background: #000000;
-  color: white;
-  font-family: inherit;
-  padding: 0.35em;
-  padding-left: 1.2em;
-  font-size: 17px;
-  font-weight: 500;
-  border-radius: 0.9em;
-  border: none;
-  letter-spacing: 0.05em;
+}
+.gallery-content {
+  width: 600px;
+  margin-top: 10px;
+  text-align: center;
+}
+.gallery-content-container {
   display: flex;
   align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #000000;
-  overflow: hidden;
-  position: relative;
-  height: 2.8em;
-  padding-right: 3.3em;
-  cursor: pointer;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 30px;
+  justify-content: center;
 }
-
-.cssbuttons-io-button .icon {
-  background: white;
-  margin-left: 1em;
+.gallery-container-head {
+  font-size: 30px;
+  letter-spacing: 6px;
+  margin-top: 50px;
+  text-align: center;
+}
+.gallery-content-container {
+  margin-top: 50px;
+}
+.gallery-item {
+  position: relative;
+  img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+.bottom-open {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #000000;
-  right: 0.3em;
-  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 350ms;
 }
 
-.cssbuttons-io-button:hover .icon {
-  width: calc(100% - 0.6em);
+.gallery-item:hover .bottom-open {
+  height: 80px;
 }
-
-.cssbuttons-io-button .icon svg {
-  width: 1.1em;
-  transition: transform 0.3s;
-  color: #000000;
-}
-
-.cssbuttons-io-button:hover .icon svg {
-  transform: translateX(0.1em);
-}
-
-.cssbuttons-io-button:active .icon {
-  transform: scale(0.95);
-}
-@media screen and (max-width: 600px) {
-  .gallery-container {
-    .text {
-      font-style: 25px;
+@media screen and (max-width: 850px) {
+  .gallery-item {
+    img {
+      width: 300px;
+      height: 350px;
     }
+  }
+}
+@media screen and (max-width: 760px) {
+  .gallery-content-container {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .gallery-item {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .gallery-content {
+    width: 100% !important;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .gallery-head {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 28px;
+  }
+  .gallery-container-head {
+    font-size: 25px;
+    padding: 0 10px;
+  }
+  .gallery-content-container {
+    margin-top: 20px;
   }
 }

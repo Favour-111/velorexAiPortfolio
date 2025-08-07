@@ -55,11 +55,15 @@ const Footer = () => {
             <div className="footer-itm">
               <div className="footer-itm-head">Contact</div>
               <div className="address-itm">
-                <div className="address">
-                  PO Box 16122 Collins Street West Victoria 8007 Australia
-                </div>
-                <div>geral@example.com</div>
-                <div>(+23) 345 322 233</div>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=fluxsites@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  fluxsites@gmail.com
+                </a>
+                <a href="tel:+2348069989705">+234 806 998 9705</a>
+                <a href="tel:+2347069961314">+234 706 996 1314</a>
               </div>
             </div>
             <div className="footer-itm">

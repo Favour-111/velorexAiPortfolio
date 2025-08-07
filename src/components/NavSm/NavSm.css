@@ -23,6 +23,7 @@
 .Nav-Logo-sm {
   flex: 1;
   display: flex;
+  cursor: pointer;
   align-items: center;
   gap: 5px;
   font-size: 17px;

@@ -148,6 +148,9 @@
   .address {
     width: 300px;
   }
+  a {
+    color: #787878;
+  }
 }
 .footer-social-container {
   display: flex;

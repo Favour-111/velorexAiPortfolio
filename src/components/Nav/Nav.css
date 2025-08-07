@@ -25,6 +25,7 @@
   color: white !important;
   display: flex;
   align-items: center;
+  cursor: pointer;
   gap: 5px;
   font-size: 20px;
   font-weight: lighter;
@@ -180,12 +181,13 @@
   flex-direction: column;
   margin-top: 20px;
 }
-.contact-nav-Text {
+.contact-nav-Text a {
   color: white;
   font-size: 16px;
   margin-top: 10px;
   font-weight: 300;
   text-align: center;
+  text-decoration: none !important;
 }
 @media screen and (max-width: 840px) {
   .navbar {

@@ -9,7 +9,9 @@ import { TbMenuDeep } from "react-icons/tb";
 import { MdClose, MdLocationOn } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { useNavigate } from "react-router";
 const AboutNav = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [barIsOpened, setBarIsOpened] = useState(false);
   useEffect(() => {
@@ -25,7 +27,12 @@ const AboutNav = () => {
     <div>
       <nav className={`navbar ${isScrolled ? "scrolled2" : ""}`}>
         <div className="navbar-content">
-          <div className="Nav-Logo2">
+          <div
+            className="Nav-Logo2"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <div className={barIsOpened ? "OpenedLogo" : ""}>
               <GiArtificialHive className="mb-1" />
             </div>
@@ -107,23 +114,31 @@ const AboutNav = () => {
               <div className="contact-nav-icon">
                 <FaPhoneAlt size={20} color="black" />
               </div>
-              <div className="contact-nav-Text">+234 806 998 9705</div>
+              <a href="tel:+2348069989705" className="contact-nav-Text">
+                +234 806 998 9705
+              </a>
             </div>
             <div className="contact-item">
+              <div className="contact-nav-icon">
+                <FaPhoneAlt size={20} color="black" />
+              </div>
+              <a href="tel:+2347069961314" className="contact-nav-Text">
+                +234 706 996 1314
+              </a>
+            </div>
+            <a className="contact-item">
               <div className="contact-nav-icon">
                 <IoMail size={20} color="black" />
               </div>
-              <div className="contact-nav-Text">Velorex@gmail.com</div>
-            </div>
-            <div className="contact-item">
-              <div className="contact-nav-icon">
-                <MdLocationOn color="black" size={20} />
-              </div>
-              <div className="contact-nav-Text">
-                No 80 igba otun sango
-                <br /> ota ogun state
-              </div>
-            </div>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=fluxsites@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-nav-Text"
+              >
+                fluxsites@gmail.com
+              </a>
+            </a>
           </div>
         </div>
       </div>

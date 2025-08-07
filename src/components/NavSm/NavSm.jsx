@@ -10,7 +10,9 @@ import { MdClose, MdLocationOn } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoClose, IoMail } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useNavigate } from "react-router";
 const NavSm = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [navIsOpened, setNavIsOpened] = useState(false);
   useEffect(() => {
@@ -26,7 +28,12 @@ const NavSm = () => {
     <div>
       <nav className={`navbar-sm ${isScrolled ? "scrolled" : ""}`}>
         <div className="navbar-sm-content">
-          <div className="Nav-Logo-sm">
+          <div
+            className="Nav-Logo-sm"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <div>
               <GiArtificialHive className="mb-1" />
             </div>

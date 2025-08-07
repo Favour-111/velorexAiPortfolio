@@ -65,7 +65,7 @@ const Home = () => {
             <span>{text}</span>
             <span className="blinking-cursor">|</span>
           </div>
-          <div className="company-name">Velorex AI</div>
+          <div className="company-name">Velorex</div>
         </div>
       </div>
       <div className="short-content-container">
