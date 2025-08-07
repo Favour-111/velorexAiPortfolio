@@ -12,6 +12,7 @@ import Eguy from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook 
 import Quiz from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (4).png";
 import Review from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (5).png";
 import Footer from "../../components/Footer/Footer";
+import BackToTop from "../../components/BackToTop/BackToTop";
 const Gallery = () => {
   const [CheckProject, setCheckProject] = useState(false);
   const gallertItem = [
@@ -45,6 +46,7 @@ const Gallery = () => {
       <div className="gallery-banner">
         <AboutNav />
         <AboutNavSm />
+        <BackToTop />
         <div className="gallery-banner-text">
           <div className="gallery-sub-head">our portfolio</div>
           <div className="gallery-head">CREATIVE SOLUTIONS</div>

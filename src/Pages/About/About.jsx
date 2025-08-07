@@ -14,6 +14,7 @@ const About = () => {
       <div className="about-banner">
         <AboutNav />
         <AboutNavSm />
+        <BackToTop />
         <div className="bar-item">
           <div className="bar-sub-head">about our agency</div>
           <div className="about-head">
