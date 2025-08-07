@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  z-index: 10000000;
 }
 .pop-up-container {
   height: auto;
