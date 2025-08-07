@@ -11,7 +11,11 @@ import {
 } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import toast, { Toaster } from "react-hot-toast";
 const Footer = () => {
+  const handleClick = () => {
+    toast("Link is currently unavailable");
+  };
   return (
     <div>
       <div className="footer-container">
@@ -62,8 +66,8 @@ const Footer = () => {
                 >
                   fluxsites@gmail.com
                 </a>
-                <a href="tel:+2348069989705">+234 806 998 9705</a>
                 <a href="tel:+2347069961314">+234 706 996 1314</a>
+                <a href="tel:+2348069989705">+234 806 998 9705</a>
               </div>
             </div>
             <div className="footer-itm">
@@ -99,16 +103,16 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-social-container">
-            <div className="footer-social-item">
+            <div className="footer-social-item" onClick={handleClick}>
               <FaInstagram />
             </div>
-            <div className="footer-social-item">
+            <div className="footer-social-item" onClick={handleClick}>
               <FaFacebookF />
             </div>
-            <div className="footer-social-item">
+            <div className="footer-social-item " onClick={handleClick}>
               <BsTwitterX />
             </div>
-            <div className="footer-social-item">
+            <div className="footer-social-item" onClick={handleClick}>
               <FaTiktok />
             </div>
             <div className="footer-social-item">
@@ -118,6 +122,7 @@ const Footer = () => {
           <div className="copyright">2025 © Pine Horbah's tech</div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

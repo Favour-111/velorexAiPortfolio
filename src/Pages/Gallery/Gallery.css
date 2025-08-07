@@ -39,11 +39,11 @@
 .gallery-container-head {
   font-size: 30px;
   letter-spacing: 6px;
-  margin-top: 50px;
+  margin-top: 80px;
   text-align: center;
+  text-transform: uppercase;
 }
 .gallery-content-container {
-  margin-top: 50px;
 }
 .gallery-item {
   position: relative;
@@ -106,7 +106,7 @@
     font-size: 28px;
   }
   .gallery-container-head {
-    font-size: 25px;
+    font-size: 22px;
     padding: 0 10px;
   }
   .gallery-content-container {

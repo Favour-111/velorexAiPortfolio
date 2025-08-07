@@ -57,7 +57,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className="gallery-container">
-        <div className="gallery-container-head">WE DESIGN STUFFS</div>
+        <div className="gallery-container-head">Next-Level Website Design</div>
         <div className="gallery-content-container">
           {gallertItem.map((item, index) => {
             return (
