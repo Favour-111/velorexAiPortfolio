@@ -75,7 +75,7 @@ const Nav = () => {
             >
               <TbMenuDeep size={23} />
             </div>
-            <button href="#" class="button">
+            <a href="tel:+2347069961314" class="button">
               Get in touch
               <span class="button__icon-wrapper">
                 <svg
@@ -104,7 +104,7 @@ const Nav = () => {
                   ></path>
                 </svg>
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -120,16 +120,16 @@ const Nav = () => {
               <div className="contact-nav-icon">
                 <FaPhoneAlt size={20} color="black" />
               </div>
-              <a href="tel:+2348069989705" className="contact-nav-Text">
-                +234 806 998 9705
+              <a href="tel:+2347069961314" className="contact-nav-Text">
+                +234 706 996 1314
               </a>
             </div>
             <div className="contact-item">
               <div className="contact-nav-icon">
                 <FaPhoneAlt size={20} color="black" />
               </div>
-              <a href="tel:+2347069961314" className="contact-nav-Text">
-                +234 706 996 1314
+              <a href="tel:+2348069989705" className="contact-nav-Text">
+                +234 806 998 9705
               </a>
             </div>
             <a className="contact-item">

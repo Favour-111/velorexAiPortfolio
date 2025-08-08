@@ -36,13 +36,14 @@ const Footer = () => {
               Our team is passionate about creating designs that not only look
               great but also drive results.
             </div>
-            <button
+            <a
+              href="tel:+2347069961314"
               className="contact-btn"
               data-aos="fade-in"
               data-aos-duration="1500"
             >
               <span>Contact us</span>
-            </button>
+            </a>
           </div>
         </div>
         <div className="footer-bottom">

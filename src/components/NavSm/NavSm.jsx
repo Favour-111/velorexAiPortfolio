@@ -41,12 +41,12 @@ const NavSm = () => {
           </div>
 
           <div className="Nav-Buttons-sm">
-            <button>
+            <a href="tel:+2347069961314">
               <div>Get in touch</div>
               <div>
                 <GoArrowUpRight size={12} />
               </div>
-            </button>
+            </a>
             {navIsOpened ? (
               <div onClick={() => setNavIsOpened(false)}>
                 <IoClose color="white" size={20} />

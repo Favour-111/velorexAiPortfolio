@@ -11,6 +11,9 @@ import wosina from "../../Asset/mockup/Peach Minimalist New Stock Online Noteboo
 import Eguy from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (3).png";
 import Quiz from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (4).png";
 import Review from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (5).png";
+import Review2 from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (7).png";
+import quiz2 from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (8).png";
+import Slider from "../../Asset/mockup/Peach Minimalist New Stock Online Notebook Mockup Instagram Post (6).png";
 import Footer from "../../components/Footer/Footer";
 import BackToTop from "../../components/BackToTop/BackToTop";
 const Gallery = () => {
@@ -39,6 +42,18 @@ const Gallery = () => {
     {
       image: Review,
       Link: "https://favour-111.github.io/review-form/",
+    },
+    {
+      image: Review2,
+      Link: "https://favour-111.github.io/customer-review-frontend/",
+    },
+    {
+      image: quiz2,
+      Link: "https://favour-111.github.io/FutBolQuiz/",
+    },
+    {
+      image: Slider,
+      Link: "https://favour-111.github.io/slider-writeup/",
     },
   ];
   return (

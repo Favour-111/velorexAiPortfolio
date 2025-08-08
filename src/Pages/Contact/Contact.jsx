@@ -28,11 +28,12 @@ const Contact = () => {
                 </div>
                 <div className="info-address">
                   <div>No 30 Firstack lagos state</div>
+
                   <div>
-                    <span>Email : </span>velore@gmail.com
+                    <span>Phone : </span>+234 806 998 9705
                   </div>
                   <div>
-                    <span>Phone : </span>+234 806 998 705
+                    <span>Phone : </span>+234 706 996 1314
                   </div>
                 </div>
               </div>
